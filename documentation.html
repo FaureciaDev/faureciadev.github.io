@@ -1,0 +1,8 @@
+---
+layout: default
+title: Documentation
+---
+
+{% capture docContent %}{% include documentation.md %}{% endcapture %}
+{{ docContent | markdownify}}
+

@@ -1,0 +1,27 @@
+---
+layout: default
+title: Welcome
+---
+
+<h2>Announcements</h2>
+<div class="content-box">
+	{% capture announcementText %}{% include announcements.md %}{% endcapture %}
+	{{ announcementText | markdownify}}
+</div>
+<hr>
+
+<h2>Links</h2>
+<div class="content-box">
+	<ul>
+		<li>
+			<a href="eventInfo.html"><h2>Event Information</h2></a>
+		</li>
+		<li>
+			<a href="documentation.html"><h2>Documentation</h2></a>
+		</li>
+		<li>
+			<a href="howItWorks.html"><h2>How It Works</h2></a>
+		</li>
+	</ul>
+</div>
+
