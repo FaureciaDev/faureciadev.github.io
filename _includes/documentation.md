@@ -44,6 +44,7 @@ send time stamped values.
 | :---------------------- | :------------- | :-----| 
 |Notifiable Group   |     A list of characteristics to notify at 1Hz |  [UUID-1][UUID-2]...[UUID-N]
 |Notifiable Group Values*   |    The packed values of the characteristics in the group | [Current Elapsed Time][Value-1][Value-2]...[Value-N]
+| Occupant Presence |  1 if seat is occupied, 0 if not | 0 or 1 |
 | Heart Rate  | Heart Rate Value in Beats / Minute | 0 .. 255 |
 | Respiration Rate | Filtered Respiration Rate Value in Breaths / Minute | 0 .. 200 |
 | Integrated Pulmonary Index | Score | 0 .. 100 |
@@ -52,9 +53,9 @@ send time stamped values.
 | Blood Pressure (Diastolic) | Value in mmHG (normal < 80, prehypertension 80 .. 89, hypertension 90 ..) | 0 .. 255 |
 | Blood Flow Index | Score | 0 .. 100 | 
 | Integrated Comfort Index | Score | 0 .. 100 | 
-| Stress | 0 is very un .. stressed, 100 is very stressed | 0 .. 100 |
-| Emotional Valence | Score: aversiveness (fear) .. attrictiveness (joy) | 0 .. 100 | 
-| Emotional Arousal | Score: weak .. strong | 0 .. 100 | 
+| Stress | 0 is very un-stressed, 100 is very stressed | 0 .. 100 |
+| Emotional Valence | Score: aversiveness (fear) - attrictiveness (joy) | 0 .. 100 | 
+| Emotional Arousal | Score: weak - strong | 0 .. 100 | 
 | Occupant Mass | Weight in Kilograms | 0 .. 500 |
 | Occupant Center of Mass | XYZ Coordinates Relative to H-Point (mm) | (-500, -500, -500) .. (+500, +500, +500) | 
 | Ambient Humidity | Percent Relative Humidity | 0 .. 100 |
