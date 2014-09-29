@@ -44,7 +44,6 @@ send time stamped values.
 | :---------------------- | :------------- | :-----| 
 |Notifiable Group   |     A list of characteristics to notify at 1Hz |  [UUID-1][UUID-2]...[UUID-N]
 |Notifiable Group Values*   |    The packed values of the characteristics in the group | [Current Elapsed Time][Value-1][Value-2]...[Value-N]
-| Occupant Presence |  1 if seat is occupied, 0 if not | 0 or 1 |
 | Heart Rate  | Heart Rate Value in Beats / Minute | 0 .. 255 |
 | Respiration Rate | Filtered Respiration Rate Value in Breaths / Minute | 0 .. 200 |
 | Integrated Pulmonary Index | Score | 0 .. 100 |
