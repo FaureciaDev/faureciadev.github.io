@@ -16,7 +16,7 @@
 <body>
 <div class="container">
 	<div class="page-header">
-	<h1 class="title"><a href="index.html">Faurecia BioFit Hackathon</a> - Documentation</h1>
+	<h1 class="title"><a href="index.html">Faurecia BioFit SDK</a> - Documentation</h1>
 	</div>
 		<div class="section" id="main_content">
 			
@@ -34,6 +34,202 @@
 </code></pre>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, ea, impedit. Cumque ut quod voluptate blanditiis, vitae neque nisi eveniet adipisci. Id dignissimos culpa necessitatibus laboriosam distinctio pariatur beatae sit.</p>
+
+<h2>READABLE CHARACTERISTICS</h2>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right;">  Property  </th>
+<th style="text-align:center;"> Description   </th>
+<th style="text-align:left;"> Value Range  </th>
+<th> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;"> Occupant Presence </td>
+<td style="text-align:center;">  1 if seat is occupied, 0 if not </td>
+<td style="text-align:left;"> 0 or 1 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Heart Rate  </td>
+<td style="text-align:center;"> Heart Rate Value in Beats per Minutes sent one per second  </td>
+<td style="text-align:left;"> 0-255 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Respiration Rate </td>
+<td style="text-align:center;"> Filtered Respiration Rate Value in Breaths per Minute returned once per second </td>
+<td style="text-align:left;"> 0-200 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Integrated Pulmonary Index </td>
+<td style="text-align:center;"> Score </td>
+<td style="text-align:left;"> 0-100 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Heart Rate Variability </td>
+<td style="text-align:center;"> LF-(LF+HF) Ratio </td>
+<td style="text-align:left;"> 0.00-1.00 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Blood Pressure (Systolic) </td>
+<td style="text-align:center;"> Systolic blood pressure in mmHG </td>
+<td style="text-align:left;"> 0-255 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Blood Pressure (Diastolic) </td>
+<td style="text-align:center;"> Systolic in mmHG </td>
+<td style="text-align:left;"> 0-255 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Stress </td>
+<td style="text-align:center;"> 0 is very un-stressed, 100 is very stressed. </td>
+<td style="text-align:left;"> 0-100 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Emotional Valence </td>
+<td style="text-align:center;"> Score (0-100) </td>
+<td style="text-align:left;"> 0-100 </td>
+<td> * </td>
+</tr>
+<tr>
+<td style="text-align:right;"> Emotional Arousal </td>
+<td style="text-align:center;"> Score (0-100) </td>
+<td style="text-align:left;"> 0-100 </td>
+<td> * </td>
+</tr>
+<tr>
+<td style="text-align:right;"> Occupant Mass </td>
+<td style="text-align:center;"> Weight in Kilograms </td>
+<td style="text-align:left;"> 0-500 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Occupant Center of Mass </td>
+<td style="text-align:center;"> XYZ Coordinates Relative to H-Point (mm) </td>
+<td style="text-align:left;"> TBD </td>
+<td> * </td>
+</tr>
+<tr>
+<td style="text-align:right;"> System Time Stamp </td>
+<td style="text-align:center;"> Current Seat Time in UTC (YYYY-MM-DD-HH:MM:SS.XXX) </td>
+<td style="text-align:left;"> TBD </td>
+<td> * </td>
+</tr>
+<tr>
+<td style="text-align:right;"> Ambient Humidity </td>
+<td style="text-align:center;"> Percent Relative Humidity </td>
+<td style="text-align:left;"> 0-100 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Cushion Surface Humidity </td>
+<td style="text-align:center;"> Percent Relative Humidity </td>
+<td style="text-align:left;"> 0-100 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Upper Back Surface Humidity  </td>
+<td style="text-align:center;"> Percent Relative Humidity </td>
+<td style="text-align:left;"> 0-100 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Lower Back Surface Humidity </td>
+<td style="text-align:center;"> Percent Relative Humidity </td>
+<td style="text-align:left;"> 0-100 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Cushion Surface Temperature </td>
+<td style="text-align:center;"> Value in ⁰C </td>
+<td style="text-align:left;"> (0)-(+85) </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Back Surface Temperature </td>
+<td style="text-align:center;"> Value in ⁰C </td>
+<td style="text-align:left;"> (0)-(+85) </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Ambient Temperature </td>
+<td style="text-align:center;"> Value in ⁰C </td>
+<td style="text-align:left;"> 0-(+85) </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Lower Lumbar Pressure </td>
+<td style="text-align:center;"> % of Range. 0 is no pressure, 100 is maximum pressure. </td>
+<td style="text-align:left;"> 0-100 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Middle Lumbar Pressure </td>
+<td style="text-align:center;"> % of Range. 0 is no pressure, 100 is maximum pressure. </td>
+<td style="text-align:left;"> 0-100 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Upper Lumbar Pressure </td>
+<td style="text-align:center;"> % of Range. 0 is no pressure, 100 is maximum pressure. </td>
+<td style="text-align:left;"> 0-100 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Cushion Side Bolster Pressure </td>
+<td style="text-align:center;"> % of Range. 0 is no pressure, 100 is maximum pressure. </td>
+<td style="text-align:left;"> 0-100 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Back Side Bolster Pressure </td>
+<td style="text-align:center;"> % of Range. 0 is no pressure, 100 is maximum pressure. </td>
+<td style="text-align:left;"> 0-100 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Cushion Edge Pressure </td>
+<td style="text-align:center;"> % of Range. 0 is no pressure, 100 is maximum pressure </td>
+<td style="text-align:left;"> 0-100 </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Cushion Length </td>
+<td style="text-align:center;"> Percent of Full Extension. 0 is minimum extension, 100 is maximum extension. </td>
+<td style="text-align:left;"> 0-100 </td>
+<td> * </td>
+</tr>
+<tr>
+<td style="text-align:right;"> Upper Backrest Position </td>
+<td style="text-align:center;"> Angle in Degrees </td>
+<td style="text-align:left;"> (-20)-(+30) </td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right;"> Integrated Comfort Index </td>
+<td style="text-align:center;"> Score </td>
+<td style="text-align:left;"> 0-100 </td>
+<td> *</td>
+</tr>
+<tr>
+<td style="text-align:right;"> Blood Flow Index </td>
+<td style="text-align:center;"> Score </td>
+<td style="text-align:left;"> 0-100 </td>
+<td> *</td>
+</tr>
+</tbody>
+</table>
+
 
 
 
