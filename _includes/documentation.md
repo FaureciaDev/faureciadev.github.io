@@ -42,7 +42,7 @@ send time stamped values.
 
 |  Property  | Description   | Value | 
 | :---------------------- | :------------- | :-----| 
-|Notifiable Group   			| A list of characteristics to notify at 1Hz 			|  [UUID-1][UUID-2]...[UUID-N]
+|Notifiable Group   			| A list of characteristics to notify at 1Hz 			|  [ID-1][ID-2]...[ID-N]
 |Notifiable Group Values*   	| The packed values of the characteristics in the group	| [Current Elapsed Time][Value-1][Value-2]...[Value-N]
 
 
@@ -50,7 +50,7 @@ send time stamped values.
 ##READABLE CHARACTERISTICS
 <hr />
 
-| Num&nbsp; |  Property  | Description   | Value | 
+| ID&nbsp; |  Property  | Description   | Value | 
 | :------------ | :------------- | :-----| | :-----| 
 | 0 | Occupant Presence 			|  1 if seat is occupied, 0 if not 						| 0 or 1 |
 | 1 | Heart Rate  					| Heart Rate Value in Beats / Minute 					| 0 .. 255 |
