@@ -82,7 +82,7 @@ send time stamped values.</p>
 <hr />
 
 
-<h2>READABLE CHARACTERISTICS</h2>
+<h2>SPECIAL CHARACTERISTICS</h2>
 
 <hr />
 
@@ -97,189 +97,246 @@ send time stamped values.</p>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;">Notifiable Group   </td>
-<td style="text-align:left;">     A list of characteristics to notify at 1Hz </td>
+<td style="text-align:left;">Notifiable Group               </td>
+<td style="text-align:left;"> A list of characteristics to notify at 1Hz            </td>
 <td style="text-align:left;">  [UUID-1][UUID-2]...[UUID-N]</td>
 </tr>
 <tr>
-<td style="text-align:left;">Notifiable Group Values*   </td>
-<td style="text-align:left;">    The packed values of the characteristics in the group </td>
+<td style="text-align:left;">Notifiable Group Values*       </td>
+<td style="text-align:left;"> The packed values of the characteristics in the group </td>
 <td style="text-align:left;"> [Current Elapsed Time][Value-1][Value-2]...[Value-N]</td>
 </tr>
+</tbody>
+</table>
+
+
+<hr />
+
+
+<h2>READABLE CHARACTERISTICS</h2>
+
+<hr />
+
+
+<table>
+<thead>
 <tr>
-<td style="text-align:left;"> Occupant Presence </td>
-<td style="text-align:left;">  1 if seat is occupied, 0 if not </td>
-<td style="text-align:left;"> 0 or 1 </td>
+<th style="text-align:left;"> Num&nbsp; </th>
+<th style="text-align:left;">  Property  </th>
+<th style="text-align:left;"> Description   </th>
+<th> Value </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> 0 </td>
+<td style="text-align:left;"> Occupant Presence             </td>
+<td style="text-align:left;">  1 if seat is occupied, 0 if not                      </td>
+<td> 0 or 1 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Heart Rate  </td>
-<td style="text-align:left;"> Heart Rate Value in Beats / Minute </td>
-<td style="text-align:left;"> 0 .. 255 </td>
+<td style="text-align:left;"> 1 </td>
+<td style="text-align:left;"> Heart Rate                    </td>
+<td style="text-align:left;"> Heart Rate Value in Beats / Minute                    </td>
+<td> 0 .. 255 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Respiration Rate </td>
-<td style="text-align:left;"> Filtered Respiration Rate Value in Breaths / Minute </td>
-<td style="text-align:left;"> 0 .. 200 </td>
+<td style="text-align:left;"> 2 </td>
+<td style="text-align:left;"> Respiration Rate              </td>
+<td style="text-align:left;"> Filtered Respiration Rate Value in Breaths / Minute   </td>
+<td> 0 .. 200 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Integrated Pulmonary Index </td>
-<td style="text-align:left;"> Score </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Integrated Pulmonary Index   </td>
+<td style="text-align:left;"> Score                                                 </td>
+<td> 0 .. 100 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Heart Rate Variability </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Heart Rate Variability        </td>
 <td style="text-align:left;"> =LF/(LF+HF): Very Low Frequency (VLF) &lt; 0.04 Hz Low Frequency (LF), 0.04 .. 0.14 Hz High Frequency (HF) 0.15 .. 0.40 Hz </td>
-<td style="text-align:left;"> 0.00 .. 1.00 </td>
+<td> 0.00 .. 1.00 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Blood Pressure (Systolic) </td>
+<td style="text-align:left;"> 3 </td>
+<td style="text-align:left;"> Blood Pressure (Systolic)     </td>
 <td style="text-align:left;"> Value in mmHG (normal &lt; 120, prehypertension 120 .. 139, hypertension 140 ..) </td>
-<td style="text-align:left;"> 0 .. 255 </td>
+<td> 0 .. 255 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Blood Pressure (Diastolic) </td>
+<td style="text-align:left;"> 4 </td>
+<td style="text-align:left;"> Blood Pressure (Diastolic)    </td>
 <td style="text-align:left;"> Value in mmHG (normal &lt; 80, prehypertension 80 .. 89, hypertension 90 ..) </td>
-<td style="text-align:left;"> 0 .. 255 </td>
+<td> 0 .. 255 </td>
 </tr>
 <tr>
+<td style="text-align:left;">   </td>
 <td style="text-align:left;"> Blood Flow Index </td>
-<td style="text-align:left;"> Score </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td style="text-align:left;"> Score      </td>
+<td> 0 .. 100                                              </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Integrated Comfort Index </td>
-<td style="text-align:left;"> Score </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Integrated Comfort Index      </td>
+<td style="text-align:left;"> Score                                                 </td>
+<td> 0 .. 100 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Stress </td>
-<td style="text-align:left;"> 0 is very un-stressed, 100 is very stressed </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Stress                        </td>
+<td style="text-align:left;"> 0 is very un-stressed, 100 is very stressed           </td>
+<td> 0 .. 100 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Emotional Valence </td>
-<td style="text-align:left;"> Score: aversiveness (fear) - attrictiveness (joy) </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Emotional Valence             </td>
+<td style="text-align:left;"> Score: aversiveness (fear) - attractiveness (joy)     </td>
+<td> 0 .. 100 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Emotional Arousal </td>
-<td style="text-align:left;"> Score: weak - strong </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Emotional Arousal             </td>
+<td style="text-align:left;"> Score: weak - strong                                  </td>
+<td> 0 .. 100 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Occupant Mass </td>
-<td style="text-align:left;"> Weight in Kilograms </td>
-<td style="text-align:left;"> 0 .. 500 </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Occupant Mass                 </td>
+<td style="text-align:left;"> Weight in Kilograms                                   </td>
+<td> 0 .. 500 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Occupant Center of Mass </td>
-<td style="text-align:left;"> XYZ Coordinates Relative to H-Point (mm) </td>
-<td style="text-align:left;"> (-500, -500, -500) .. (+500, +500, +500) </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Occupant Center of Mass       </td>
+<td style="text-align:left;"> XYZ Coordinates Relative to H-Point (mm)              </td>
+<td> (-500, -500, -500) .. (+500, +500, +500) </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Ambient Humidity </td>
-<td style="text-align:left;"> Percent Relative Humidity </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Ambient Humidity              </td>
+<td style="text-align:left;"> Percent Relative Humidity                             </td>
+<td> 0 .. 100 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Cushion Surface Humidity </td>
-<td style="text-align:left;"> Percent Relative Humidity </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Cushion Surface Humidity      </td>
+<td style="text-align:left;"> Percent Relative Humidity                             </td>
+<td> 0 .. 100 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Upper Back Surface Humidity  </td>
-<td style="text-align:left;"> Percent Relative Humidity </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Upper Back Surface Humidity   </td>
+<td style="text-align:left;"> Percent Relative Humidity                             </td>
+<td> 0 .. 100 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Lower Back Surface Humidity </td>
-<td style="text-align:left;"> Percent Relative Humidity </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Lower Back Surface Humidity   </td>
+<td style="text-align:left;"> Percent Relative Humidity                             </td>
+<td> 0 .. 100 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Cushion Surface Temperature </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Cushion Surface Temperature   </td>
+<td style="text-align:left;"> Value in ⁰C                                           </td>
+<td> 0 .. 85 </td>
+</tr>
+<tr>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Back Surface Temperature      </td>
+<td style="text-align:left;"> Value in ⁰C                                           </td>
+<td> 0 .. 85 </td>
+</tr>
+<tr>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Ambient Temperature           </td>
 <td style="text-align:left;"> Value in ⁰C </td>
-<td style="text-align:left;"> 0 .. 85 </td>
+<td> 0 .. 85 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Back Surface Temperature </td>
-<td style="text-align:left;"> Value in ⁰C </td>
-<td style="text-align:left;"> 0 .. 85 </td>
-</tr>
-<tr>
-<td style="text-align:left;"> Ambient Temperature </td>
-<td style="text-align:left;"> Value in ⁰C </td>
-<td style="text-align:left;"> 0 .. 85 </td>
-</tr>
-<tr>
-<td style="text-align:left;"> Lower Lumbar Pressure </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Lower Lumbar Pressure         </td>
 <td style="text-align:left;"> % of Range. 0 is no pressure, 100 is maximum pressure. </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td> 0 .. 100 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Middle Lumbar Pressure </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Middle Lumbar Pressure        </td>
 <td style="text-align:left;"> % of Range. 0 is no pressure, 100 is maximum pressure. </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td> 0 .. 100 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Upper Lumbar Pressure </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Upper Lumbar Pressure         </td>
 <td style="text-align:left;"> % of Range. 0 is no pressure, 100 is maximum pressure. </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td> 0 .. 100 </td>
 </tr>
 <tr>
+<td style="text-align:left;">   </td>
 <td style="text-align:left;"> Cushion Side Bolster Pressure </td>
 <td style="text-align:left;"> % of Range. 0 is no pressure, 100 is maximum pressure. </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td> 0 .. 100 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Back Side Bolster Pressure </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Back Side Bolster Pressure    </td>
 <td style="text-align:left;"> % of Range. 0 is no pressure, 100 is maximum pressure. </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td> 0 .. 100 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Cushion Edge Pressure </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Cushion Edge Pressure         </td>
 <td style="text-align:left;"> % of Range. 0 is no pressure, 100 is maximum pressure </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td> 0 .. 100 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Cushion Length </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Cushion Length                </td>
 <td style="text-align:left;"> Percent of Full Extension. 0 is minimum extension, 100 is maximum extension. </td>
-<td style="text-align:left;"> 0 .. 100 </td>
+<td> 0 .. 100 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Upper Backrest Position </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Upper Backrest Position       </td>
 <td style="text-align:left;"> Angle in Degrees </td>
-<td style="text-align:left;"> -20 .. +30 </td>
+<td> -20 .. +30 </td>
 </tr>
 <tr>
-<td style="text-align:left;"> Massage Program Selection </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;"> Massage Program Selection     </td>
 <td style="text-align:left;"> 0 is off, 1-99 are pre-set programs </td>
-<td style="text-align:left;"> 0 .. 99</td>
+<td> 0 .. 99</td>
 </tr>
 <tr>
-<td style="text-align:left;">Massage Intensity           </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;">Massage Intensity              </td>
 <td style="text-align:left;"> 1 is min intensity, 9 is max intensity </td>
-<td style="text-align:left;">    1 .. 9</td>
+<td>    1 .. 9</td>
 </tr>
 <tr>
-<td style="text-align:left;">Massage Speed               </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;">Massage Speed                  </td>
 <td style="text-align:left;"> 1 is min speed, 9 is max speed</td>
-<td style="text-align:left;">    1 .. 9</td>
+<td>    1 .. 9</td>
 </tr>
 <tr>
-<td style="text-align:left;">Ventilation Level           </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;">Ventilation Level              </td>
 <td style="text-align:left;"> 0 is off, 1 is min ventilation, 9 is max ventilation </td>
-<td style="text-align:left;">    0 .. 9</td>
+<td>    0 .. 9</td>
 </tr>
 <tr>
-<td style="text-align:left;">Back Heating and Cooling    </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;">Back Heating and Cooling       </td>
 <td style="text-align:left;"> &lt; 0 is cooling, 0 is off, > 0 is heating </td>
-<td style="text-align:left;"> -9 .. 9</td>
+<td> -9 .. 9</td>
 </tr>
 <tr>
-<td style="text-align:left;">Cushion Heating and Cooling </td>
+<td style="text-align:left;">   </td>
+<td style="text-align:left;">Cushion Heating and Cooling    </td>
 <td style="text-align:left;"> &lt; 0 is cooling, 0 is off, > 0 is heating </td>
-<td style="text-align:left;"> -9 .. 9</td>
+<td> -9 .. 9</td>
 </tr>
 </tbody>
 </table>

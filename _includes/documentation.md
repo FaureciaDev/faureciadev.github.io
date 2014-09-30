@@ -37,48 +37,56 @@ RR-interval, control points and body sensor location. It also does not
 send time stamped values.
 
 <hr />
-##READABLE CHARACTERISTICS
+##SPECIAL CHARACTERISTICS
 <hr />
 
 |  Property  | Description   | Value | 
 | :---------------------- | :------------- | :-----| 
-|Notifiable Group   |     A list of characteristics to notify at 1Hz |  [UUID-1][UUID-2]...[UUID-N]
-|Notifiable Group Values*   |    The packed values of the characteristics in the group | [Current Elapsed Time][Value-1][Value-2]...[Value-N]
-| Occupant Presence |  1 if seat is occupied, 0 if not | 0 or 1 |
-| Heart Rate  | Heart Rate Value in Beats / Minute | 0 .. 255 |
-| Respiration Rate | Filtered Respiration Rate Value in Breaths / Minute | 0 .. 200 |
-| Integrated Pulmonary Index | Score | 0 .. 100 |
-| Heart Rate Variability | =LF/(LF+HF): Very Low Frequency (VLF) < 0.04 Hz Low Frequency (LF), 0.04 .. 0.14 Hz High Frequency (HF) 0.15 .. 0.40 Hz | 0.00 .. 1.00 |
-| Blood Pressure (Systolic) | Value in mmHG (normal < 120, prehypertension 120 .. 139, hypertension 140 ..) | 0 .. 255 | 
-| Blood Pressure (Diastolic) | Value in mmHG (normal < 80, prehypertension 80 .. 89, hypertension 90 ..) | 0 .. 255 |
-| Blood Flow Index | Score | 0 .. 100 | 
-| Integrated Comfort Index | Score | 0 .. 100 | 
-| Stress | 0 is very un-stressed, 100 is very stressed | 0 .. 100 |
-| Emotional Valence | Score: aversiveness (fear) - attrictiveness (joy) | 0 .. 100 | 
-| Emotional Arousal | Score: weak - strong | 0 .. 100 | 
-| Occupant Mass | Weight in Kilograms | 0 .. 500 |
-| Occupant Center of Mass | XYZ Coordinates Relative to H-Point (mm) | (-500, -500, -500) .. (+500, +500, +500) | 
-| Ambient Humidity | Percent Relative Humidity | 0 .. 100 |
-| Cushion Surface Humidity | Percent Relative Humidity | 0 .. 100 |
-| Upper Back Surface Humidity  | Percent Relative Humidity | 0 .. 100 |
-| Lower Back Surface Humidity | Percent Relative Humidity | 0 .. 100 |
-| Cushion Surface Temperature | Value in ⁰C | 0 .. 85 |
-| Back Surface Temperature | Value in ⁰C | 0 .. 85 |
-| Ambient Temperature | Value in ⁰C | 0 .. 85 |
-| Lower Lumbar Pressure | % of Range. 0 is no pressure, 100 is maximum pressure. | 0 .. 100 |
-| Middle Lumbar Pressure | % of Range. 0 is no pressure, 100 is maximum pressure. | 0 .. 100 |
-| Upper Lumbar Pressure | % of Range. 0 is no pressure, 100 is maximum pressure. | 0 .. 100 |
-| Cushion Side Bolster Pressure | % of Range. 0 is no pressure, 100 is maximum pressure. | 0 .. 100 |
-| Back Side Bolster Pressure | % of Range. 0 is no pressure, 100 is maximum pressure. | 0 .. 100 |
-| Cushion Edge Pressure | % of Range. 0 is no pressure, 100 is maximum pressure | 0 .. 100 |
-| Cushion Length | Percent of Full Extension. 0 is minimum extension, 100 is maximum extension. | 0 .. 100 |
-| Upper Backrest Position | Angle in Degrees | -20 .. +30 |
-| Massage Program Selection | 0 is off, 1-99 are pre-set programs | 0 .. 99
-|Massage Intensity           | 1 is min intensity, 9 is max intensity |    1 .. 9
-|Massage Speed               | 1 is min speed, 9 is max speed|    1 .. 9
-|Ventilation Level           | 0 is off, 1 is min ventilation, 9 is max ventilation |    0 .. 9
-|Back Heating and Cooling    | < 0 is cooling, 0 is off, > 0 is heating | -9 .. 9
-|Cushion Heating and Cooling | < 0 is cooling, 0 is off, > 0 is heating | -9 .. 9
+|Notifiable Group   			| A list of characteristics to notify at 1Hz 			|  [UUID-1][UUID-2]...[UUID-N]
+|Notifiable Group Values*   	| The packed values of the characteristics in the group	| [Current Elapsed Time][Value-1][Value-2]...[Value-N]
+
+
+<hr />
+##READABLE CHARACTERISTICS
+<hr />
+
+| Num&nbsp; |  Property  | Description   | Value | 
+| :------------ | :------------- | :-----| | :-----| 
+| 0 | Occupant Presence 			|  1 if seat is occupied, 0 if not 						| 0 or 1 |
+| 1 | Heart Rate  					| Heart Rate Value in Beats / Minute 					| 0 .. 255 |
+| 2 | Respiration Rate 				| Filtered Respiration Rate Value in Breaths / Minute 	| 0 .. 200 |
+|   | Integrated Pulmonary Index 	| Score 												| 0 .. 100 |
+|   | Heart Rate Variability 		| =LF/(LF+HF): Very Low Frequency (VLF) < 0.04 Hz Low Frequency (LF), 0.04 .. 0.14 Hz High Frequency (HF) 0.15 .. 0.40 Hz | 0.00 .. 1.00 |
+| 3 | Blood Pressure (Systolic) 	| Value in mmHG (normal < 120, prehypertension 120 .. 139, hypertension 140 ..) | 0 .. 255 | 
+| 4 | Blood Pressure (Diastolic) 	| Value in mmHG (normal < 80, prehypertension 80 .. 89, hypertension 90 ..) | 0 .. 255 |
+|   | Blood Flow Index | Score 		| 0 .. 100 												| 
+|   | Integrated Comfort Index 		| Score 												| 0 .. 100 | 
+|   | Stress 						| 0 is very un-stressed, 100 is very stressed 			| 0 .. 100 |
+|   | Emotional Valence 			| Score: aversiveness (fear) - attractiveness (joy) 	| 0 .. 100 | 
+|   | Emotional Arousal 			| Score: weak - strong 									| 0 .. 100 | 
+|   | Occupant Mass 				| Weight in Kilograms 									| 0 .. 500 |
+|   | Occupant Center of Mass 		| XYZ Coordinates Relative to H-Point (mm) 				| (-500, -500, -500) .. (+500, +500, +500) | 
+|   | Ambient Humidity 				| Percent Relative Humidity 							| 0 .. 100 |
+|   | Cushion Surface Humidity 		| Percent Relative Humidity 							| 0 .. 100 |
+|   | Upper Back Surface Humidity  	| Percent Relative Humidity 							| 0 .. 100 |
+|   | Lower Back Surface Humidity 	| Percent Relative Humidity 							| 0 .. 100 |
+|   | Cushion Surface Temperature	| Value in ⁰C                                           | 0 .. 85 |
+|   | Back Surface Temperature 		| Value in ⁰C                                           | 0 .. 85 |
+|   | Ambient Temperature 			| Value in ⁰C | 0 .. 85 |
+|   | Lower Lumbar Pressure 		| % of Range. 0 is no pressure, 100 is maximum pressure. | 0 .. 100 |
+|   | Middle Lumbar Pressure 		| % of Range. 0 is no pressure, 100 is maximum pressure. | 0 .. 100 |
+|   | Upper Lumbar Pressure 		| % of Range. 0 is no pressure, 100 is maximum pressure. | 0 .. 100 |
+|   | Cushion Side Bolster Pressure	| % of Range. 0 is no pressure, 100 is maximum pressure. | 0 .. 100 |
+|   | Back Side Bolster Pressure	| % of Range. 0 is no pressure, 100 is maximum pressure. | 0 .. 100 |
+|   | Cushion Edge Pressure 		| % of Range. 0 is no pressure, 100 is maximum pressure | 0 .. 100 |
+|   | Cushion Length 				| Percent of Full Extension. 0 is minimum extension, 100 is maximum extension. | 0 .. 100 |
+|   | Upper Backrest Position 		| Angle in Degrees | -20 .. +30 |
+|   | Massage Program Selection		| 0 is off, 1-99 are pre-set programs | 0 .. 99
+|   |Massage Intensity				| 1 is min intensity, 9 is max intensity |    1 .. 9
+|   |Massage Speed					| 1 is min speed, 9 is max speed|    1 .. 9
+|   |Ventilation Level				| 0 is off, 1 is min ventilation, 9 is max ventilation |    0 .. 9
+|   |Back Heating and Cooling		| < 0 is cooling, 0 is off, > 0 is heating | -9 .. 9
+|   |Cushion Heating and Cooling	| < 0 is cooling, 0 is off, > 0 is heating | -9 .. 9
 
 <hr />
 ##NOTIFIABLE ONLY CHARACTERISTICS
