@@ -14,6 +14,7 @@
 <title> - Documentation</title>
 </head>
 <body>
+<a name="top"></a>
 <div class="container">
 	<div class="page-header">
 	<h1 class="title"><a href="index.html">Faurecia BioFit SDK</a> - Documentation</h1>
@@ -90,21 +91,18 @@ send time stamped values.</p>
 <table>
 <thead>
 <tr>
+<th> ID&nbsp; </th>
 <th style="text-align:left;">  Property  </th>
-<th style="text-align:left;"> Description   </th>
-<th style="text-align:left;"> Value </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;">Notifiable Group               </td>
-<td style="text-align:left;"> A list of characteristics to notify at 1Hz            </td>
-<td style="text-align:left;">  [ID-1][ID-2]...[ID-N]</td>
+<td> </td>
+<td style="text-align:left;"><a href="#notifiableGroup" name="notifiableGroupTable">Notifiable Group</a> </td>
 </tr>
 <tr>
-<td style="text-align:left;">Notifiable Group Values*       </td>
-<td style="text-align:left;"> The packed values of the characteristics in the group </td>
-<td style="text-align:left;"> [Current Elapsed Time][Value-1][Value-2]...[Value-N]</td>
+<td> </td>
+<td style="text-align:left;"><a href="#notifiableGroupValues" name="notifiableGroupValuesTable">Notifiable Group Values*</a>      </td>
 </tr>
 </tbody>
 </table>
@@ -437,6 +435,72 @@ send time stamped values.</p>
 </tbody>
 </table>
 
+
+<hr />
+
+
+<h2><a name="notifiableGroup">Notifiable Group</a></h2>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left;"> </th>
+<th style="text-align:left;"> </th>
+<th style="text-align:left;"> </th>
+<th style="text-align:left;"> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> <h4>UUID</h4> 5957BE8F-C01F-4531-A529-0924398E4FE9 </td>
+<td style="text-align:left;"> <h4>Type</h4> uint8 for each element in array </td>
+<td style="text-align:left;"> <h4>Bluetooth Properties</h4>Readable, Writeable </td>
+<td style="text-align:left;"> <h4>Values</h4> [ID-1][ID-2]...[ID-N]</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br /></p>
+
+<h4>Description</h4>
+
+<p>A list of characteristics to notify at 1Hz</p>
+
+<h6><a href="#notifiableGroupTable">back to table</a></h6>
+
+<hr />
+
+
+<h2><a name="notifiableGroupValues">Notifiable Group Values</a></h2>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left;"> </th>
+<th style="text-align:left;"> </th>
+<th style="text-align:left;"> </th>
+<th style="text-align:left;"> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> <h4>UUID</h4> ########-####-####-####-############ </td>
+<td style="text-align:left;"> <h4>Type</h4> Array of individually typed values </td>
+<td style="text-align:left;"> <h4>Bluetooth Properties</h4>Readable, Notifiable </td>
+<td style="text-align:left;"> <h4>Values</h4> [Current Elapsed Time][Value-1][Value-2]...[Value-N]</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br /></p>
+
+<h4>Description</h4>
+
+<p>The packed values of the characteristics in the group. Values to notify determined by the notifiable group property. Limited to a total length of 20 bytes.</p>
+
+<h6><a href="#notifiableGroupValuesTable">back to table</a></h6>
 
 
 

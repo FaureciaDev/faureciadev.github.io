@@ -40,10 +40,10 @@ send time stamped values.
 ##SPECIAL CHARACTERISTICS
 <hr />
 
-|  Property  | Description   | Value | 
-| :---------------------- | :------------- | :-----| 
-|Notifiable Group   			| A list of characteristics to notify at 1Hz 			|  [ID-1][ID-2]...[ID-N]
-|Notifiable Group Values*   	| The packed values of the characteristics in the group	| [Current Elapsed Time][Value-1][Value-2]...[Value-N]
+| ID&nbsp; |  Property  | 
+| | :------| 
+| |<a href="#notifiableGroup" name="notifiableGroupTable">Notifiable Group</a> | 
+| |<a href="#notifiableGroupValues" name="notifiableGroupValuesTable">Notifiable Group Values*</a>   	| 
 
 
 <hr />
@@ -115,3 +115,27 @@ send time stamped values.
 |Ventilation Level             |   0.2 s
 |Back Heating and Cooling      |   0.2 s
 |Cushion Heating and Cooling   |   0.2 s
+
+<hr />
+##<a name="notifiableGroup">Notifiable Group</a>
+| | | | |
+| :-- | :----- | :-----| :-- |
+| <h4>UUID</h4> 5957BE8F-C01F-4531-A529-0924398E4FE9 | <h4>Type</h4> uint8 for each element in array | <h4>Bluetooth Properties</h4>Readable, Writeable | <h4>Values</h4> [ID-1][ID-2]...[ID-N]
+
+<br />
+####Description
+A list of characteristics to notify at 1Hz 
+
+######<a href="#notifiableGroupTable">back to table</a>
+
+<hr />
+##<a name="notifiableGroupValues">Notifiable Group Values</a>
+| | | | |
+| :-- | :----- | :-----| :-- |
+| <h4>UUID</h4> ########-####-####-####-############ | <h4>Type</h4> Array of individually typed values | <h4>Bluetooth Properties</h4>Readable, Notifiable | <h4>Values</h4> [Current Elapsed Time][Value-1][Value-2]...[Value-N]
+
+<br />
+####Description
+The packed values of the characteristics in the group. Values to notify determined by the notifiable group property. Limited to a total length of 20 bytes.
+
+######<a href="#notifiableGroupValuesTable">back to table</a>
