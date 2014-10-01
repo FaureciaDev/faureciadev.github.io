@@ -37,7 +37,7 @@ RR-interval, control points and body sensor location. It also does not
 send time stamped values.
 
 <hr />
-##Seat Characteristics
+##BioFit Characteristics
 
 | ID&nbsp; |  Property  | 
 | :--:  | :---------------------- | 
