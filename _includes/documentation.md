@@ -193,7 +193,7 @@ The packed values of the characteristics in the group. Values to notify determin
 <br />
 <span style="padding-top:5px"></span>
 <h4>Description</h4>
- Score 
+An integrated score that describes an occupant’s respiratory status (normal = 10, less than 6 may indicate intervention required)
 <h6 style="padding-top:5px"><a href="#integratedPulmonaryIndexTable">back to table</a></h6>
 </div>
 <hr />
@@ -269,7 +269,7 @@ The packed values of the characteristics in the group. Values to notify determin
 <br />
 <span style="padding-top:5px"></span>
 <h4>Description</h4>
- Score 
+An integrated score that estimates an individual’s blood flow relative to ideal:  ideal blood flow = 100, poor blood flow = 0
 <h6 style="padding-top:5px"><a href="#bloodFlowIndexTable">back to table</a></h6>
 </div>
 <hr />
@@ -288,7 +288,7 @@ The packed values of the characteristics in the group. Values to notify determin
 <br />
 <span style="padding-top:5px"></span>
 <h4>Description</h4>
- Score 
+An integrated score that estimates an individual’s level of comfort:  extreme comfort = 100, extreme discomfort = 0
 <h6 style="padding-top:5px"><a href="#integratedComfortIndexTable">back to table</a></h6>
 </div>
 <hr />
@@ -326,7 +326,7 @@ The packed values of the characteristics in the group. Values to notify determin
 <br />
 <span style="padding-top:5px"></span>
 <h4>Description</h4>
- Score: aversiveness (fear) - attractiveness (joy)
+ An estimate of emotional positivity or negativity: negative = 0, neutral = 50, positive = 100
 <h6 style="padding-top:5px"><a href="#emotionalValenceTable">back to table</a></h6>
 </div>
 <hr />
@@ -345,7 +345,7 @@ The packed values of the characteristics in the group. Values to notify determin
 <br />
 <span style="padding-top:5px"></span>
 <h4>Description</h4>
- Score: weak - strong 
+ An estimate of how strong someone’s emotion is: calm = 0, excited = 100 
 <h6 style="padding-top:5px"><a href="#emotionalArousalTable">back to table</a></h6>
 </div>
 <hr />
@@ -378,7 +378,7 @@ The packed values of the characteristics in the group. Values to notify determin
    </td><td>
        <h4>Bluetooth Properties</h4> Readable
    </td><td>
-       <h4>Values</h4> (-500, -500, -500) .. (+500, +500, +500) 
+       <h4>Values</h4> (0, 0, 0) .. (255, 255, 255) 
 </td></tr></table>
 <br />
 <span style="padding-top:5px"></span>
