@@ -87,7 +87,7 @@ send time stamped values.
 ##<a name="notifiableGroup">Notifiable Group</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> 5957BE8F-C01F-4531-A529-0924398E4FE9
+        <h4>UUID</h4>BAC554FA-8961-4AD1-80AA-31EDA30DC652
     </td><td>
        <h4>Type</h4> uint8 for each element in array 
    </td><td>
@@ -106,7 +106,7 @@ A list of characteristics to notify at 1Hz
 ##<a name="notifiableGroupValues">Notifiable Group Values</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>5957BE8F-C01F-4531-A529-0924398E4FE9
     </td><td>
        <h4>Type</h4> Array of individually typed values <br />[uint32, [type-1][type-2]...[type-n]]
    </td><td>
@@ -125,7 +125,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="occupantPresence">Occupant Presence</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>B43EED9C-E88E-42FF-AB8C-4399977C3D9D
     </td><td>
        <h4>Type</h4> int8
    </td><td>
@@ -144,7 +144,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="heartRate">Heart Rate</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>39D1E3AE-EA25-43BD-BB62-ADD8ECD897D5
     </td><td>
        <h4>Type</h4> uint8
    </td><td>
@@ -163,7 +163,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="respirationRate">Respiration Rate </a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>D5F34109-9F28-4213-85A4-808357CEF8F3
     </td><td>
        <h4>Type</h4> uint8
    </td><td>
@@ -179,10 +179,10 @@ The packed values of the characteristics in the group. Values to notify determin
 </div>
 <hr />
 
-##<a name="integratedPulmonaryIndex">Integrated Pulmonary Index </a>
+##<a name="integratedPulmonaryIndex">Integrated Pulmonary Index</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>8217E89D-C226-45F6-A36E-DA23DDE4A83A
     </td><td>
        <h4>Type</h4> int8
    </td><td>
@@ -201,7 +201,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="heartRateVariability">Heart Rate Variability</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>00CFF3E3-A2FF-4E05-8EFA-C22D799EB136
     </td><td>
        <h4>Type</h4> int8
    </td><td>
@@ -220,7 +220,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="bloodPressureSystolic">Blood Pressure (Systolic)</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>D9A9F3E2-E884-40F4-91D6-41892C2D2E73
     </td><td>
        <h4>Type</h4> uint8
    </td><td>
@@ -239,7 +239,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="bloodPressureDiastolic">Blood Pressure (Diastolic)</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>0038087B-31E2-4D67-8106-A4996E329EE2
     </td><td>
        <h4>Type</h4> uint8
    </td><td>
@@ -258,7 +258,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="bloodFlowIndex">Blood Flow Index</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>65CF8D40-8943-473A-8DC9-400F5A17A6C7
     </td><td>
        <h4>Type</h4> int8
    </td><td>
@@ -277,7 +277,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="integratedComfortIndex">Integrated Comfort Index</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>48560C7A-F383-4C27-BE20-E92C416C8F80
     </td><td>
        <h4>Type</h4> int8
    </td><td>
@@ -296,7 +296,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="stress">Stress</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>96A70770-C16F-40CC-BB4D-768E0F02494E
     </td><td>
        <h4>Type</h4> int8
    </td><td>
@@ -315,7 +315,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="emotionalValence">Emotional Valence</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>C2D2F281-7756-47A7-9B14-C9BAC900354F
     </td><td>
        <h4>Type</h4> int8
    </td><td>
@@ -334,7 +334,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="emotionalArousal">Emotional Arousal</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>3B7E5227-2926-4E15-9FE6-E4CD273371B2
     </td><td>
        <h4>Type</h4> int8
    </td><td>
@@ -353,7 +353,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="occupantMass">Occupant Mass</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>E76B29AC-FD59-4530-898B-35AB751A43C8
     </td><td>
        <h4>Type</h4> int16
    </td><td>
@@ -372,7 +372,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="occupantCenterOfMass">Occupant Center of Mass</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>B11102CC-5235-44BE-B8E8-825DFF3B90FD
     </td><td>
        <h4>Type</h4> [uint8, uint8, uint8]
    </td><td>
@@ -391,7 +391,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="ambientHumidity">Ambient Humidity</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>2B46CF2F-C102-4683-8F05-9E6AD5A84843
     </td><td>
        <h4>Type</h4> int8
    </td><td>
@@ -410,7 +410,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="cushionSurfaceHumidity">Cushion Surface Humidity</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>4612CD0D-64F0-4140-9EB5-198B770FC0D0
     </td><td>
        <h4>Type</h4> int8
    </td><td>
@@ -429,7 +429,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="upperBackSurfaceHumidity">Upper Back Surface Humidity</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>53603F65-6B4B-4D46-B373-B486B78590D2
     </td><td>
        <h4>Type</h4> int8
    </td><td>
@@ -448,7 +448,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="lowerBackSurfaceHumidity">Lower Back Surface Humidity</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>7E3DF6AE-41C7-493E-8D4D-556A62321A9B
     </td><td>
        <h4>Type</h4> int8
    </td><td>
@@ -467,7 +467,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="cushionSurfaceTemperature">Cushion Surface Temperature</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>75A8A1EF-B8E0-4FB4-A867-B68E653DF932
     </td><td>
        <h4>Type</h4> int8
    </td><td>
@@ -486,7 +486,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="backSurfaceTemperature">Back Surface Temperature</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>2CD29B7B-22D5-4371-89FF-E849E2120929
     </td><td>
        <h4>Type</h4> int8
    </td><td>
@@ -505,7 +505,7 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="ambientTemperature">Ambient Temperature</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>45DEFC80-B2FC-49A4-A97D-A68FFDEFF8C2
     </td><td>
        <h4>Type</h4> int8
    </td><td>
@@ -524,11 +524,11 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="lowerLumbarPressure">Lower Lumbar Pressure</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>1BA22BC7-28AB-4B25-A0EE-4553C4C28DC2
     </td><td>
        <h4>Type</h4> int8
    </td><td>
-       <h4>Bluetooth Properties</h4> Readable
+       <h4>Bluetooth Properties</h4> Readable, Writeable
    </td><td>
        <h4>Values</h4> 0 .. 100 
 </td></tr></table>
@@ -543,11 +543,11 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="middleLumbarPressure">Middle Lumbar Pressure</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>636235DE-D04C-42DD-8673-F11918D7C5BD
     </td><td>
        <h4>Type</h4> int8
    </td><td>
-       <h4>Bluetooth Properties</h4> Readable
+       <h4>Bluetooth Properties</h4> Readable, Writeable
    </td><td>
        <h4>Values</h4> 0 .. 100 
 </td></tr></table>
@@ -562,11 +562,11 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="upperLumbarPressure">Upper Lumbar Pressure</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>E430BAFB-B101-4896-9957-6E3938F575D8
     </td><td>
        <h4>Type</h4> int8
    </td><td>
-       <h4>Bluetooth Properties</h4> Readable
+       <h4>Bluetooth Properties</h4> Readable, Writeable
    </td><td>
        <h4>Values</h4> 0 .. 100 
 </td></tr></table>
@@ -581,11 +581,11 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="cushionSideBolsterPressure">Cushion Side Bolster Pressure</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>434A3872-2DE3-4E76-A120-30A179286D28
     </td><td>
        <h4>Type</h4> int8
    </td><td>
-       <h4>Bluetooth Properties</h4> Readable
+       <h4>Bluetooth Properties</h4> Readable, Writeable
    </td><td>
        <h4>Values</h4> 0 .. 100 
 </td></tr></table>
@@ -600,11 +600,11 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="backSideBolsterPressure">Back Side Bolster Pressure</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>984CB911-02F5-4941-9A1D-AD09A5764F15
     </td><td>
        <h4>Type</h4> int8
    </td><td>
-       <h4>Bluetooth Properties</h4> Readable
+       <h4>Bluetooth Properties</h4> Readable, Writeable
    </td><td>
        <h4>Values</h4> 0 .. 100 
 </td></tr></table>
@@ -619,11 +619,11 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="cushionEdgePressure">Cushion Edge Pressure</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>7949ABDC-965E-4175-ACF1-B842848C6AD5
     </td><td>
        <h4>Type</h4> int8
    </td><td>
-       <h4>Bluetooth Properties</h4> Readable
+       <h4>Bluetooth Properties</h4> Readable, Writeable
    </td><td>
        <h4>Values</h4> 0 .. 100 
 </td></tr></table>
@@ -638,11 +638,11 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="cushionLength">Cushion Length</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>65A45C5D-9B54-4488-ABD2-1853D11E7F54
     </td><td>
        <h4>Type</h4> int8
    </td><td>
-       <h4>Bluetooth Properties</h4> Readable
+       <h4>Bluetooth Properties</h4> Readable, Writeable
    </td><td>
        <h4>Values</h4> 0 .. 100 
 </td></tr></table>
@@ -657,11 +657,11 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="upperBackrestPosition">Upper Backrest Position</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>EC7D0CB9-34D4-423C-AAAC-CFF722E3A6C5
     </td><td>
        <h4>Type</h4> int8
    </td><td>
-       <h4>Bluetooth Properties</h4> Readable
+       <h4>Bluetooth Properties</h4> Readable, Writeable
    </td><td>
        <h4>Values</h4> -20 .. +30 
 </td></tr></table>
@@ -676,13 +676,13 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="massageProgramSelection">Massage Program Selection</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>E66E4070-831B-4E23-B05E-D7BE5F06AF4B
     </td><td>
        <h4>Type</h4> uint8
    </td><td>
-       <h4>Bluetooth Properties</h4> Readable
+       <h4>Bluetooth Properties</h4> Readable, Writeable
    </td><td>
-       <h4>Values</h4> | 0 is off, 1-99 are pre-set programs 
+       <h4>Values</h4> 0 .. 99
 </td></tr></table>
 <br />
 <span style="padding-top:5px"></span>
@@ -695,13 +695,13 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="massageIntensity">Massage Intensity</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>165F7489-A805-4D70-8900-135A4E174404
     </td><td>
        <h4>Type</h4> int8
    </td><td>
-       <h4>Bluetooth Properties</h4> Readable
+       <h4>Bluetooth Properties</h4> Readable, Writeable
    </td><td>
-       <h4>Values</h4> | 1 is min intensity, 9 is max intensity 
+       <h4>Values</h4> 1 .. 9
 </td></tr></table>
 <br />
 <span style="padding-top:5px"></span>
@@ -714,13 +714,13 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="massageSpeed">Massage Speed</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>C4248837-F351-4538-9A73-8480637F3841
     </td><td>
        <h4>Type</h4> int8
    </td><td>
-       <h4>Bluetooth Properties</h4> Readable
+       <h4>Bluetooth Properties</h4> Readable, Writeable
    </td><td>
-       <h4>Values</h4> | 1 is min speed, 9 is max speed
+       <h4>Values</h4> 1 .. 9
 </td></tr></table>
 <br />
 <span style="padding-top:5px"></span>
@@ -733,13 +733,13 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="ventilationLevel">Ventilation Level</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>25BFE8A4-786D-458D-A4AD-F710D4E7EFC6
     </td><td>
        <h4>Type</h4> uint8
    </td><td>
-       <h4>Bluetooth Properties</h4> Readable
+       <h4>Bluetooth Properties</h4> Readable, Writeable
    </td><td>
-       <h4>Values</h4> | 0 is off, 1 is min ventilation, 9 is max ventilation 
+       <h4>Values</h4> 1 .. 9
 </td></tr></table>
 <br />
 <span style="padding-top:5px"></span>
@@ -752,18 +752,18 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="backHeatingAndCooling">Back Heating and Cooling</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>C391FFC3-BD58-4BB4-AC90-08A96BF04E39
     </td><td>
        <h4>Type</h4> int8
    </td><td>
-       <h4>Bluetooth Properties</h4> Readable
+       <h4>Bluetooth Properties</h4> Readable, Writeable
    </td><td>
-       <h4>Values</h4> | < 0 is cooling, 0 is off, > 0 is heating 
+       <h4>Values</h4>-9 .. 9
 </td></tr></table>
 <br />
 <span style="padding-top:5px"></span>
 <h4>Description</h4>
- Less than 0 is cooling, 0 is off, greater than 0 is heating 
+ Less than 0 is cooling, 0 is off, greater than 0 is heating.  A higher magnitude represents a higher magnitude temperature.
 <h6 style="padding-top:5px"><a href="#backHeatingAndCoolingTable">back to table</a></h6>
 </div>
 <hr />
@@ -771,18 +771,18 @@ The packed values of the characteristics in the group. Values to notify determin
 ##<a name="cushionHeatingAndCooling">Cushion Heating and Cooling</a>
 <div class="content-box">
 <table><tr><td>
-        <h4>UUID</h4> ########-####-####-####-############
+        <h4>UUID</h4>B3AB6D33-3E6A-42B3-B1BD-D821FFBE3090
     </td><td>
        <h4>Type</h4> int8
    </td><td>
-       <h4>Bluetooth Properties</h4> Readable
+       <h4>Bluetooth Properties</h4> Readable, Writeable
    </td><td>
-       <h4>Values</h4> | < 0 is cooling, 0 is off, > 0 is heating 
+       <h4>Values</h4> -9 .. 9
 </td></tr></table>
 <br />
 <span style="padding-top:5px"></span>
 <h4>Description</h4>
- Less than 0 is cooling, 0 is off, greater than 0 is heating 
+ Less than 0 is cooling, 0 is off, greater than 0 is heating. A higher magnitude represents a higher magnitude temperature.
 <h6 style="padding-top:5px"><a href="#cushionHeatingAndCoolingTable">back to table</a></h6>
 </div>
 <hr /> 
@@ -806,4 +806,3 @@ The packed values of the characteristics in the group. Values to notify determin
 </div>
 <hr />
 end of template -->
-
