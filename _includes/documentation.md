@@ -41,43 +41,45 @@ send time stamped values.
 
 | ID&nbsp; |  Property  | 
 | :--:  | :---------------------- | 
-|   | <a href="#notifiableGroup" name="notifiableGroupTable">Notifiable Group</a> | 
-|   | <a href="#notifiableGroupValues" name="notifiableGroupValuesTable">Notifiable Group Values*</a> 
-| 0 | <a href="#occupantPresence" name="occupantPresenceTable">Occupant Presence</a>
-| 1 | <a href="#heartRate" name="heartRateTable">Heart Rate</a>
-| 2 | <a href="#respirationRate" name="respirationRateTable">Respiration Rate</a>
-|   | <a href="#integratedPulmonaryIndex" name="integratedPulmonaryIndexTable">Integrated Pulmonary Index</a>
-|   | <a href="#heartRateVariability" name="heartRateVariabilityTable">Heart Rate Variability</a>
-| 3 | <a href="#bloodPressureSystolic" name="bloodPressureSystolicTable">Blood Pressure (Systolic)</a>
-| 4 | <a href="#bloodPressureDiastolic" name="bloodPressureDiastolicTable">Blood Pressure (Diastolic)</a>
-|   | <a href="#bloodFlowIndex" name="bloodFlowIndexTable">Blood Flow Index</a> 
-|   | <a href="#integratedComfortIndex" name="integratedComfortIndexTable">Integrated Comfort Index</a>
-|   | <a href="#stress" name="stressTable">Stress</a>
-|   | <a href="#emotionalValence" name="emotionalValenceTable">Emotional Valence</a>
-|   | <a href="#emotionalArousal" name="emotionalArousalTable">Emotional Arousal</a>
-|   | <a href="#occupantMass" name="occupantMassTable">Occupant Mass</a>
-|   | <a href="#occupantCenterOfMass" name="occupantCenterOfMassTable">Occupant Center of Mass</a>
-|   | <a href="#ambientHumidity" name="ambientHumidityTable">Ambient Humidity</a>
-|   | <a href="#cushionSurfaceHumidity" name="cushionSurfaceHumidityTable">Cushion Surface Humidity</a>
-|   | <a href="#upperBackSurfaceHumidity" name="upperBackSurfaceHumidityTable">Upper Back Surface Humidity</a>
-|   | <a href="#lowerBackSurfaceHumidity" name="lowerBackSurfaceHumidityTable">Lower Back Surface Humidity</a>
-|   | <a href="#cushionSurfaceTemperature" name="cushionSurfaceTemperatureTable">Cushion Surface Temperature</a>
-|   | <a href="#backSurfaceTemperature" name="backSurfaceTemperatureTable">Back Surface Temperature</a>
-|   | <a href="#ambientTemperature" name="ambientTemperatureTable">Ambient Temperature</a>
-|   | <a href="#lowerLumbarPressure" name="lowerLumbarPressureTable">Lower Lumbar Pressure</a>
-|   | <a href="#middleLumbarPressure" name="middleLumbarPressureTable">Middle Lumbar Pressure</a>
-|   | <a href="#upperLumbarPressure" name="upperLumbarPressureTable">Upper Lumbar Pressure</a>
-|   | <a href="#cushionSideBolsterPressure" name="cushionSideBolsterPressureTable">Cushion Side Bolster Pressure</a>
-|   | <a href="#backSideBolsterPressure" name="backSideBolsterPressureTable">Back Side Bolster Pressure</a>
-|   | <a href="#cushionEdgePressure" name="cushionEdgePressureTable">Cushion Edge Pressure</a>    
-|   | <a href="#cushionLength" name="cushionLengthTable">Cushion Length</a>
-|   | <a href="#upperBackrestPosition" name="upperBackrestPositionTable">Upper Backrest Position</a>
-|   | <a href="#massageProgramSelection" name="massageProgramSelectionTable">Massage Program Selection</a>
-|   | <a href="#massageIntensity" name="massageIntensityTable">Massage Intensity</a>
-|   | <a href="#massageSpeed" name="massageSpeedTable">Massage Speed</a>
-|   | <a href="#ventilationLevel" name="ventilationLevelTable">Ventilation Level</a>
-|   | <a href="#backHeatingAndCooling" name="backHeatingAndCoolingTable">Back Heating and Cooling</a>
-|   | <a href="#cushionHeatingAndCooling" name="cushionHeatingAndCoolingTable">Cushion Heating and Cooling</a>
+| 4  | <a href="#notifiableGroup" name="notifiableGroupTable">Notifiable Group</a> | 
+| 5  | <a href="#notifiableGroupValues" name="notifiableGroupValuesTable">Notifiable Group Values*</a> 
+| 1  | <a href="#systemTimeStamp" name="systemTimeStampTable">System Time Stamp</a> 
+| 2  | <a href="#connectionReferenceTime" name="connectionReferenceTimeTable">Connection Reference Time</a> 
+| 0  | <a href="#occupantPresence" name="occupantPresenceTable">Occupant Presence</a>
+| 7  | <a href="#heartRate" name="heartRateTable">Heart Rate</a>
+| 8  | <a href="#respirationRate" name="respirationRateTable">Respiration Rate</a>
+| 9  | <a href="#integratedPulmonaryIndex" name="integratedPulmonaryIndexTable">Integrated Pulmonary Index</a>
+| 10 | <a href="#heartRateVariability" name="heartRateVariabilityTable">Heart Rate Variability</a>
+| 11 | <a href="#bloodPressureSystolic" name="bloodPressureSystolicTable">Blood Pressure (Systolic)</a>
+| 12 | <a href="#bloodPressureDiastolic" name="bloodPressureDiastolicTable">Blood Pressure (Diastolic)</a>
+| 13 | <a href="#bloodFlowIndex" name="bloodFlowIndexTable">Blood Flow Index</a> 
+| 14 | <a href="#integratedComfortIndex" name="integratedComfortIndexTable">Integrated Comfort Index</a>
+| 15 | <a href="#stress" name="stressTable">Stress</a>
+| 16 | <a href="#emotionalValence" name="emotionalValenceTable">Emotional Valence</a>
+| 17 | <a href="#emotionalArousal" name="emotionalArousalTable">Emotional Arousal</a>
+| 18 | <a href="#occupantMass" name="occupantMassTable">Occupant Mass</a>
+| 19 | <a href="#occupantCenterOfMass" name="occupantCenterOfMassTable">Occupant Center of Mass</a>
+| 20 | <a href="#ambientHumidity" name="ambientHumidityTable">Ambient Humidity</a>
+| 21 | <a href="#cushionSurfaceHumidity" name="cushionSurfaceHumidityTable">Cushion Surface Humidity</a>
+| 22 | <a href="#upperBackSurfaceHumidity" name="upperBackSurfaceHumidityTable">Upper Back Surface Humidity</a>
+| 23 | <a href="#lowerBackSurfaceHumidity" name="lowerBackSurfaceHumidityTable">Lower Back Surface Humidity</a>
+| 24 | <a href="#cushionSurfaceTemperature" name="cushionSurfaceTemperatureTable">Cushion Surface Temperature</a>
+| 25 | <a href="#backSurfaceTemperature" name="backSurfaceTemperatureTable">Back Surface Temperature</a>
+| 26 | <a href="#ambientTemperature" name="ambientTemperatureTable">Ambient Temperature</a>
+| 27 | <a href="#lowerLumbarPressure" name="lowerLumbarPressureTable">Lower Lumbar Pressure</a>
+| 28 | <a href="#middleLumbarPressure" name="middleLumbarPressureTable">Middle Lumbar Pressure</a>
+| 29 | <a href="#upperLumbarPressure" name="upperLumbarPressureTable">Upper Lumbar Pressure</a>
+| 30 | <a href="#cushionSideBolsterPressure" name="cushionSideBolsterPressureTable">Cushion Side Bolster Pressure</a>
+| 31 | <a href="#backSideBolsterPressure" name="backSideBolsterPressureTable">Back Side Bolster Pressure</a>
+| 33 | <a href="#cushionEdgePressure" name="cushionEdgePressureTable">Cushion Edge Pressure</a>    
+| 32 | <a href="#cushionLength" name="cushionLengthTable">Cushion Length</a>
+| 34 | <a href="#upperBackrestPosition" name="upperBackrestPositionTable">Upper Backrest Position</a>
+| 35 | <a href="#massageProgramSelection" name="massageProgramSelectionTable">Massage Program Selection</a>
+| 36 | <a href="#massageIntensity" name="massageIntensityTable">Massage Intensity</a>
+| 37 | <a href="#massageSpeed" name="massageSpeedTable">Massage Speed</a>
+| 38 | <a href="#ventilationLevel" name="ventilationLevelTable">Ventilation Level</a>
+| 39 | <a href="#backHeatingAndCooling" name="backHeatingAndCoolingTable">Back Heating and Cooling</a>
+| 40 | <a href="#cushionHeatingAndCooling" name="cushionHeatingAndCoolingTable">Cushion Heating and Cooling</a>
 
 <hr />
 
@@ -374,11 +376,11 @@ An integrated score that estimates an individual’s level of comfort:  extreme 
 <table><tr><td>
         <h4>UUID</h4>B11102CC-5235-44BE-B8E8-825DFF3B90FD
     </td><td>
-       <h4>Type</h4> [uint8, uint8, uint8]
+       <h4>Type</h4> [int16, int16, int16]
    </td><td>
        <h4>Bluetooth Properties</h4> Readable
    </td><td>
-       <h4>Values</h4> (0, 0, 0) .. (255, 255, 255) 
+       <h4>Values</h4> (-500, -500, -500) .. (500, 500, 500) 
 </td></tr></table>
 <br />
 <span style="padding-top:5px"></span>
