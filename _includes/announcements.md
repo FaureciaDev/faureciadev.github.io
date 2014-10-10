@@ -6,3 +6,6 @@ Faurecia has developed what might be the ultimate wearable device â€“ the worldâ
 For everything you need to begin developing with BioFit, please see the links below.
 
 ####Check out this [blog post](https://autotechchallenge.wordpress.com/2014/09/12/interview-with-faurencia-director/) for more about the BioFit SDK and the Autotech Developers Challenge.
+<hr />
+####Get Started! Download the BioFit Simulator and a demo BioFit iOS or Android application from our [GitHub Page](https://github.com/faureciadev)
+
