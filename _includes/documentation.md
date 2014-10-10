@@ -37,6 +37,9 @@ RR-interval, control points and body sensor location. It also does not
 send time stamped values.
 
 <hr />
+##BioFit Service
+BioFit has only one Bluetooth service. Its UUID is: <h5>E5E8451C-A235-4A96-9E81-EAE3DF296564</h5>
+
 ##BioFit Characteristics
 
 | ID&nbsp; |  Property  | 
@@ -119,17 +122,18 @@ send time stamped values.
    </td><td>
        <h4>Bluetooth Properties</h4> Readable
    </td><td>
-       <h4>Values</h4>
+       <h4>Values</h4>yyyy-MM-dd-HH:mm:ss.SSSS
 </td></tr></table>
 <br />
 <span style="padding-top:5px"></span>
-<h4>Seat Timestamp</h4>
+<h4>Description</h4>
+Time at which the most recent data reading was recorded from BioFit.
 <h6 style="padding-top:5px"><a href="#systemTimeStampTable">back to table</a></h6>
 </div>
 <hr />
 
 ##<a name="connectionReferenceTime">Connection Reference Time</a>
-<div class="content-box">
+<div class="content-box"    >
 <table><tr><td>
         <h4>ID</h4>2  
     </td><td>
@@ -139,11 +143,12 @@ send time stamped values.
    </td><td>
        <h4>Bluetooth Properties</h4> Readable
    </td><td>
-       <h4>Values</h4>
+       <h4>Values</h4>yyyy-MM-dd-HH:mm:ss.SSSS
 </td></tr></table>
 <br />
 <span style="padding-top:5px"></span>
-<h4>connection reference time</h4>
+<h4>Description</h4>
+The time at which the initial connection was made to the Bluetooth BioFit peripheral.
 <h6 style="padding-top:5px"><a href="#connectionReferenceTimeTable">back to table</a></h6>
 </div>
 <hr />
@@ -159,11 +164,12 @@ send time stamped values.
    </td><td>
        <h4>Bluetooth Properties</h4> Readable
    </td><td>
-       <h4>Values</h4>
+       <h4>Values</h4> milliseconds since initial connection was made.
 </td></tr></table>
 <br />
 <span style="padding-top:5px"></span>
-<h4>current elapsed time</h4>
+<h4>Description</h4>
+Elapsed time since initial connection was made in milliseconds
 <h6 style="padding-top:5px"><a href="#currentElapsedTimeTable">back to table</a></h6>
 </div>
 <hr />

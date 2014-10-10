@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" media="screen">
+<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+<link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<title> - Simulator Information</title>
+</head>
+<body>
+<a name="top"></a>
+<div class="container">
+	<div class="page-header">
+	<h1 class="title"><a href="index.html">Faurecia BioFit SDK</a> - Simulator Information</h1>
+	</div>
+		<div class="section" id="main_content">
+			
+<div class="row">
+    <div class="col-md-9 col-md-offset-1">
+        <img src="/images/Simulator.png" style="width:100%"/>
+    </div>
+</div>
+
+
+<p>The diagram only displays heart rate, temperature and humidity information.  The table on the right, however, displays all of the characteristics and their values. Values can be edited by clicking on a row and entering the desired value in the text box.</p>
+
+<p>Scenarios 1, 2 and 3 will play back data recorded from a BioFit session.  Heart Rate, Respiration Rate, Systolic Blood Pressure, Diastolic Blood Pressure and Stress were all recorded at a rate of 1Hz for a human participant.  Other fields were not recorded, and are assigned static default initial values.</p>
+
+<p>To modify the data for various scenarios, the ABCDEF buttons are linked to custom data modification functions in the code.</p>
+
+<p>Helpful features for modification
+ - the values struct: contains the current state of all the values
+ - the <em>find out real name</em> simulated data array - contains an array of heart rate, respiration rate, systolic blood pressure, diastolic blood pressure and stress for each state.  If a similuator is running, this array can be modified.
+ - "ticker". This is reset every time a new simulation is loaded.  Every time the simulator updates (every second), it will increment by one.  It can be used to apply a modification for a certain amount of time.</p>
+
+
+
+		</div>
+
+	<footer>
+	   Theme adapted from <a href="https://github.com/jasonlong/tactile-theme">Tactile theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+	</footer>
+</div>
+</body>
+</html>
