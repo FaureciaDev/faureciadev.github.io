@@ -18,12 +18,21 @@ case it is fixed point (treat as integer and divide by 10 * number of
 decimal places to convert to floating point). The numeric types in
 order of preference are:
 
-A group of characteristics can be requested to be notifiable by
-writing the UUIDs of the desired characteristics to Notifiable Group.
-This is the primary way of getting push data from the seat. The group
-always includes Current Elapsed Time. Certain other characteristics
-may also be independently notifiable, but doing that will lose the
-benefit of the time stamp.
+###Reading BioFit Property Values
+To get a stream of data from BioFit, use the notifiable group characteristic to specify which property values you would like to receive updates on. To do this, write the IDs (not the UUIDS) to the Notifiable Group characteristic.
+The Notifiable Group Values characteristic will notify every second with the values that were requested in the write to Notifiable Group.  The first item in the list will always be a uint32 timestamp of when the data sample was taken. The subsequent values will be the requested properties, in the order they were written to the request.
+Properties are also readable.  Reading loses the optimization benefit of packaging them together into a single communication, and loses the benefit of the timestamp. Reading is great for values that you want to check infrequently.
+####Limitations
+A Bluetooth communication is limited to 20 bytes, so the size of the uint32 timestamp plus the length of the property data types requested must not exceed 20 bytes.
+
+####Example Workflow
+1. Write [7,11,12] as uint values to the notifiable group characteristic
+2. Subscribe to the notifiable group values characteristic
+3. When a notify occurs on the notifiable group, decode the array of values that are returned: [uint32 timestamp, int8 heart rate, int8 systolic blood pressure, int8 diastolic blood pressure]
+
+###Performing Seat Functions
+BioFit also supports several seat functions such as performing massages, updating the position and heating and cooling the BioFit. BioFit function characteristics are writeable. Performing a function is as simple as writing to that function's characteristic.
+Functions take a little bit of time to complete - the seat can't instantly move forward.  When the requested operation is complete, the write effect complete characteristic will notify with the int8 id of function characteristic that completed.
 
 <hr />
 ##BioFit Service
