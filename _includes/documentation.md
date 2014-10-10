@@ -42,49 +42,49 @@ BioFit has only one Bluetooth service. Its UUID is: <h5>E5E8451C-A235-4A96-9E81-
 
 ##BioFit Characteristics
 
-| ID&nbsp; |  Property  | 
-| :--:  | :---------------------- | 
-| 0  | <a href="#occupantPresence" name="occupantPresenceTable">Occupant Presence</a>
-| 1  | <a href="#systemTimeStamp" name="systemTimeStampTable">System Time Stamp</a> 
-| 2  | <a href="#connectionReferenceTime" name="connectionReferenceTimeTable">Connection Reference Time</a> 
-| 3  | <a href="#currentElapsedTime" name="currentElapsedTimeTable">Current Elapsed Time</a> 
-| 4  | <a href="#notifiableGroup" name="notifiableGroupTable">Notifiable Group</a> | 
-| 5  | <a href="#notifiableGroupValues" name="notifiableGroupValuesTable">Notifiable Group Values*</a> 
-| 6  | <a href="#writeEffectComplete" name="writeEffectCompleteTable">Write Effect Complete*</a> 
-| 7  | <a href="#heartRate" name="heartRateTable">Heart Rate</a>
-| 8  | <a href="#respirationRate" name="respirationRateTable">Respiration Rate</a>
-| 9  | <a href="#integratedPulmonaryIndex" name="integratedPulmonaryIndexTable">Integrated Pulmonary Index</a>
-| 10 | <a href="#heartRateVariability" name="heartRateVariabilityTable">Heart Rate Variability</a>
-| 11 | <a href="#bloodPressureSystolic" name="bloodPressureSystolicTable">Blood Pressure (Systolic)</a>
-| 12 | <a href="#bloodPressureDiastolic" name="bloodPressureDiastolicTable">Blood Pressure (Diastolic)</a>
-| 13 | <a href="#bloodFlowIndex" name="bloodFlowIndexTable">Blood Flow Index</a> 
-| 14 | <a href="#integratedComfortIndex" name="integratedComfortIndexTable">Integrated Comfort Index</a>
-| 15 | <a href="#stress" name="stressTable">Stress</a>
-| 16 | <a href="#emotionalValence" name="emotionalValenceTable">Emotional Valence</a>
-| 17 | <a href="#emotionalArousal" name="emotionalArousalTable">Emotional Arousal</a>
-| 18 | <a href="#occupantMass" name="occupantMassTable">Occupant Mass</a>
-| 19 | <a href="#occupantCenterOfMass" name="occupantCenterOfMassTable">Occupant Center of Mass</a>
-| 20 | <a href="#ambientHumidity" name="ambientHumidityTable">Ambient Humidity</a>
-| 21 | <a href="#cushionSurfaceHumidity" name="cushionSurfaceHumidityTable">Cushion Surface Humidity</a>
-| 22 | <a href="#upperBackSurfaceHumidity" name="upperBackSurfaceHumidityTable">Upper Back Surface Humidity</a>
-| 23 | <a href="#lowerBackSurfaceHumidity" name="lowerBackSurfaceHumidityTable">Lower Back Surface Humidity</a>
-| 24 | <a href="#cushionSurfaceTemperature" name="cushionSurfaceTemperatureTable">Cushion Surface Temperature</a>
-| 25 | <a href="#backSurfaceTemperature" name="backSurfaceTemperatureTable">Back Surface Temperature</a>
-| 26 | <a href="#ambientTemperature" name="ambientTemperatureTable">Ambient Temperature</a>
-| 27 | <a href="#lowerLumbarPressure" name="lowerLumbarPressureTable">Lower Lumbar Pressure</a>
-| 28 | <a href="#middleLumbarPressure" name="middleLumbarPressureTable">Middle Lumbar Pressure</a>
-| 29 | <a href="#upperLumbarPressure" name="upperLumbarPressureTable">Upper Lumbar Pressure</a>
-| 30 | <a href="#cushionSideBolsterPressure" name="cushionSideBolsterPressureTable">Cushion Side Bolster Pressure</a>
-| 31 | <a href="#backSideBolsterPressure" name="backSideBolsterPressureTable">Back Side Bolster Pressure</a>
-| 32 | <a href="#cushionLength" name="cushionLengthTable">Cushion Length</a>
-| 33 | <a href="#cushionEdgePressure" name="cushionEdgePressureTable">Cushion Edge Pressure</a>    
-| 34 | <a href="#upperBackrestPosition" name="upperBackrestPositionTable">Upper Backrest Position</a>
-| 35 | <a href="#massageProgramSelection" name="massageProgramSelectionTable">Massage Program Selection</a>
-| 36 | <a href="#massageIntensity" name="massageIntensityTable">Massage Intensity</a>
-| 37 | <a href="#massageSpeed" name="massageSpeedTable">Massage Speed</a>
-| 38 | <a href="#ventilationLevel" name="ventilationLevelTable">Ventilation Level</a>
-| 39 | <a href="#backHeatingAndCooling" name="backHeatingAndCoolingTable">Back Heating and Cooling</a>
-| 40 | <a href="#cushionHeatingAndCooling" name="cushionHeatingAndCoolingTable">Cushion Heating and Cooling</a>
+| ID&nbsp; |  Property  | Type | <!--hack-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| :------ | :--------- | :--- | -------------------------- |
+| 0  | <a href="#occupantPresence" name="occupantPresenceTable">Occupant Presence</a> | int8
+| 1  | <a href="#systemTimeStamp" name="systemTimeStampTable">System Time Stamp</a> | uint32
+| 2  | <a href="#connectionReferenceTime" name="connectionReferenceTimeTable">Connection Reference Time</a> | uint32
+| 3  | <a href="#currentElapsedTime" name="currentElapsedTimeTable">Current Elapsed Time</a> | uint32
+| 4  | <a href="#notifiableGroup" name="notifiableGroupTable">Notifiable Group</a> | Array of uint8 IDs
+| 5  | <a href="#notifiableGroupValues" name="notifiableGroupValuesTable">Notifiable Group Values*</a> | Array of individually typed values [uint32, [type-1][type-2]...[type-n]]
+| 6  | <a href="#writeEffectComplete" name="writeEffectCompleteTable">Write Effect Complete*</a> | uint8 ID
+| 7  | <a href="#heartRate" name="heartRateTable">Heart Rate</a>| uint8
+| 8  | <a href="#respirationRate" name="respirationRateTable">Respiration Rate</a>| uint8
+| 9  | <a href="#integratedPulmonaryIndex" name="integratedPulmonaryIndexTable">Integrated Pulmonary Index</a>| int8
+| 10 | <a href="#heartRateVariability" name="heartRateVariabilityTable">Heart Rate Variability</a>| int8
+| 11 | <a href="#bloodPressureSystolic" name="bloodPressureSystolicTable">Blood Pressure (Systolic)</a>| uint8
+| 12 | <a href="#bloodPressureDiastolic" name="bloodPressureDiastolicTable">Blood Pressure (Diastolic)</a>| uint8
+| 13 | <a href="#bloodFlowIndex" name="bloodFlowIndexTable">Blood Flow Index</a> | int8
+| 14 | <a href="#integratedComfortIndex" name="integratedComfortIndexTable">Integrated Comfort Index</a>| int8
+| 15 | <a href="#stress" name="stressTable">Stress</a>| int8
+| 16 | <a href="#emotionalValence" name="emotionalValenceTable">Emotional Valence</a>| int8
+| 17 | <a href="#emotionalArousal" name="emotionalArousalTable">Emotional Arousal</a>| int8
+| 18 | <a href="#occupantMass" name="occupantMassTable">Occupant Mass</a>| int16
+| 19 | <a href="#occupantCenterOfMass" name="occupantCenterOfMassTable">Occupant Center of Mass</a>| [int16, int16, int16]
+| 20 | <a href="#ambientHumidity" name="ambientHumidityTable">Ambient Humidity</a>| int8
+| 21 | <a href="#cushionSurfaceHumidity" name="cushionSurfaceHumidityTable">Cushion Surface Humidity</a>| int8
+| 22 | <a href="#upperBackSurfaceHumidity" name="upperBackSurfaceHumidityTable">Upper Back Surface Humidity</a>| int8
+| 23 | <a href="#lowerBackSurfaceHumidity" name="lowerBackSurfaceHumidityTable">Lower Back Surface Humidity</a>| int8
+| 24 | <a href="#cushionSurfaceTemperature" name="cushionSurfaceTemperatureTable">Cushion Surface Temperature</a>| int16
+| 25 | <a href="#backSurfaceTemperature" name="backSurfaceTemperatureTable">Back Surface Temperature</a>| int16
+| 26 | <a href="#ambientTemperature" name="ambientTemperatureTable">Ambient Temperature</a>| int16
+| 27 | <a href="#lowerLumbarPressure" name="lowerLumbarPressureTable">Lower Lumbar Pressure</a>| int8
+| 28 | <a href="#middleLumbarPressure" name="middleLumbarPressureTable">Middle Lumbar Pressure</a>| int8
+| 29 | <a href="#upperLumbarPressure" name="upperLumbarPressureTable">Upper Lumbar Pressure</a>| int8
+| 30 | <a href="#cushionSideBolsterPressure" name="cushionSideBolsterPressureTable">Cushion Side Bolster Pressure</a>| int8
+| 31 | <a href="#backSideBolsterPressure" name="backSideBolsterPressureTable">Back Side Bolster Pressure</a>| int8
+| 32 | <a href="#cushionLength" name="cushionLengthTable">Cushion Length</a>| int8
+| 33 | <a href="#cushionEdgePressure" name="cushionEdgePressureTable">Cushion Edge Pressure</a>    | int8
+| 34 | <a href="#upperBackrestPosition" name="upperBackrestPositionTable">Upper Backrest Position</a>| int8
+| 35 | <a href="#massageProgramSelection" name="massageProgramSelectionTable">Massage Program Selection</a>| uint8
+| 36 | <a href="#massageIntensity" name="massageIntensityTable">Massage Intensity</a>| int8
+| 37 | <a href="#massageSpeed" name="massageSpeedTable">Massage Speed</a>| int8
+| 38 | <a href="#ventilationLevel" name="ventilationLevelTable">Ventilation Level</a>| uint8
+| 39 | <a href="#backHeatingAndCooling" name="backHeatingAndCoolingTable">Back Heating and Cooling</a>| int8
+| 40 | <a href="#cushionHeatingAndCooling" name="cushionHeatingAndCoolingTable">Cushion Heating and Cooling</a>| int8
 
 <hr />
 
@@ -316,6 +316,7 @@ An integrated score that describes an occupant’s respiratory status (normal = 
 <br />
 <span style="padding-top:5px"></span>
 <h4>Description</h4>
+ heartRateVariability = returned int8 value / 100.
  =LF/(LF+HF): Very Low Frequency (VLF) &lt; 0.04 Hz Low Frequency (LF), 0.04 .. 0.14 Hz High Frequency (HF) 0.15 .. 0.40 Hz 
 <h6 style="padding-top:5px"><a href="#heartRateVariabilityTable">back to table</a></h6>
 </div>
@@ -601,7 +602,7 @@ An integrated score that estimates an individual’s level of comfort:  extreme 
     </td><td>
         <h4>UUID</h4>75A8A1EF-B8E0-4FB4-A867-B68E653DF932
     </td><td>
-       <h4>Type</h4> int8
+       <h4>Type</h4> int16
    </td><td>
        <h4>Bluetooth Properties</h4> Readable
    </td><td>
@@ -611,6 +612,7 @@ An integrated score that estimates an individual’s level of comfort:  extreme 
 <span style="padding-top:5px"></span>
 <h4>Description</h4>
  Value in ⁰C                                           
+ Cushion Surface Temperature = returned int16 value / 10
 <h6 style="padding-top:5px"><a href="#cushionSurfaceTemperatureTable">back to table</a></h6>
 </div>
 <hr />
@@ -622,16 +624,17 @@ An integrated score that estimates an individual’s level of comfort:  extreme 
     </td><td>
         <h4>UUID</h4>2CD29B7B-22D5-4371-89FF-E849E2120929
     </td><td>
-       <h4>Type</h4> int8
+       <h4>Type</h4> int16
    </td><td>
        <h4>Bluetooth Properties</h4> Readable
    </td><td>
-       <h4>Values</h4> 0 .. 85 
+       <h4>Values</h4> 0.0 .. 85.0 
 </td></tr></table>
 <br />
 <span style="padding-top:5px"></span>
 <h4>Description</h4>
  Value in ⁰C                                           
+ Back Surface Temperature = returned int16 value / 10
 <h6 style="padding-top:5px"><a href="#backSurfaceTemperatureTable">back to table</a></h6>
 </div>
 <hr />
@@ -643,16 +646,17 @@ An integrated score that estimates an individual’s level of comfort:  extreme 
     </td><td>
         <h4>UUID</h4>45DEFC80-B2FC-49A4-A97D-A68FFDEFF8C2
     </td><td>
-       <h4>Type</h4> int8
+       <h4>Type</h4> int16
    </td><td>
        <h4>Bluetooth Properties</h4> Readable
    </td><td>
-       <h4>Values</h4> 0 .. 85 
+       <h4>Values</h4> 0.0 .. 85.0 
 </td></tr></table>
 <br />
 <span style="padding-top:5px"></span>
 <h4>Description</h4>
  Value in ⁰C 
+ Ambient Temperature = returned int16 value / 10
 <h6 style="padding-top:5px"><a href="#ambientTemperatureTable">back to table</a></h6>
 </div>
 <hr />
@@ -668,7 +672,7 @@ An integrated score that estimates an individual’s level of comfort:  extreme 
    </td><td>
        <h4>Bluetooth Properties</h4> Readable, Writeable
    </td><td>
-       <h4>Values</h4> 0 .. 100 
+       <h4>Values</h4> 0.0 .. 100.0 
 </td></tr></table>
 <br />
 <span style="padding-top:5px"></span>
@@ -811,8 +815,6 @@ An integrated score that estimates an individual’s level of comfort:  extreme 
     </td><td>
         <h4>UUID</h4>EC7D0CB9-34D4-423C-AAAC-CFF722E3A6C5
     </td><td>
-        <h4>UUID</h4>EC7D0CB9-34D4-423C-AAAC-CFF722E3A6C5
-    </td><td>
        <h4>Type</h4> int8
    </td><td>
        <h4>Bluetooth Properties</h4> Readable, Writeable
@@ -843,7 +845,7 @@ An integrated score that estimates an individual’s level of comfort:  extreme 
 <br />
 <span style="padding-top:5px"></span>
 <h4>Description</h4>
- 0 is off, 1-99 are pre-set programs 
+ 0 is off, 1-99 are pre-set programs.  If you would like to run a specific program (ie 3 beats upper left, 3 beats upper right, 3 beats lower left, 3 beats lower right), pick a number, and describe in a README what program that represents.
 <h6 style="padding-top:5px"><a href="#massageProgramSelectionTable">back to table</a></h6>
 </div>
 <hr />
