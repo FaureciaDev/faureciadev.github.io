@@ -23,11 +23,6 @@
 			
 <p>The Faurecia BioFit Seat is a <a href="http://www.bluetooth.com/Pages/low-energy-tech-info.aspx">Bluetooth LE</a> peripheral.</p>
 
-<p>All values are integers unless a decimal precision is shown in which
-case it is fixed point (treat as integer and divide by 10 * number of
-decimal places to convert to floating point). The numeric types in
-order of preference are:</p>
-
 <table>
 <thead>
 <tr>
@@ -57,28 +52,21 @@ order of preference are:</p>
 
 
 <p><br />
-A group of characteristics can be requested to be notifiable by
+Characteristics marked with an asterisk are independently notifiable
+with values sent once per second. Other attributes are only notified
+when the value changes.</p>
+
+<p>All values are integers unless a decimal precision is shown in which
+case it is fixed point (treat as integer and divide by 10 * number of
+decimal places to convert to floating point). The numeric types in
+order of preference are:</p>
+
+<p>A group of characteristics can be requested to be notifiable by
 writing the UUIDs of the desired characteristics to Notifiable Group.
 This is the primary way of getting push data from the seat. The group
 always includes Current Elapsed Time. Certain other characteristics
 may also be independently notifiable, but doing that will lose the
 benefit of the time stamp.</p>
-
-<p>Characteristics marked with an asterisk are independently notifiable
-with values sent once per second. Other attributes are only notified
-when the value changes.</p>
-
-<p>The writable characteristics use the same formats as the readable
-characteristics (they often have the same UUID). Since the seat is a
-physical system, there can be a significant time delay between writing
-a value and the seat effecting the change. Do not poll the
-characteristic watching for it to change: use the notify-only
-characteristic Write Effect Complete.</p>
-
-<p>The standard Bluetooth heart rate service is not planned to be used
-since it focuses on data we don't have such as energy expended,
-RR-interval, control points and body sensor location. It also does not
-send time stamped values.</p>
 
 <hr />
 

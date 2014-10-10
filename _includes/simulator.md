@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-9 col-md-offset-1">
-        <img src="/images/Simulator.png" style="width:100%"/>
+        <img src="/images/sim.png" style="width:100%"/>
     </div>
 </div>
 
